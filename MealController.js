@@ -18,7 +18,7 @@ module.exports.saveMeals = async (req, res) => {
 }
 
 //DELETE
-module.exports.deletedMeals = async (req, res) => {
+module.exports.deleteMeal = async (req, res) => {
     const { _id } = req.body
     MealModel.findByIdAndDelete(_id)
     .then(() => res.send('Deleted a meal'))

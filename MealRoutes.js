@@ -1,11 +1,11 @@
 const { Router } = require('express');
-const { getMeal, saveMeals, deletedMeals, editMeals } = require('./MealController');
+const { getMeal, saveMeals, deleteMeal, editMeals } = require('./MealController');
 
 const router = Router();
 
 router.get('/', getMeal);
 router.post('/saveMeals', saveMeals);
-router.delete('/deletedMeals', deletedMeals);
+router.delete('/deleteMeal', deleteMeal);
 router.put('/editMeals', editMeals);
 
 
